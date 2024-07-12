@@ -34,16 +34,17 @@ func parseHeaders(headers []qpack.HeaderField, isRequest bool) (header, error) {
 	var contentLengthStr string
 	for _, h := range headers {
 		// field names need to be lowercase, see section 4.2 of RFC 9114
-		if strings.ToLower(h.Name) != h.Name {
-			return header{}, fmt.Errorf("header field is not lower-case: %s", h.Name)
-		}
+		//if strings.ToLower(h.Name) != h.Name {
+		//	return header{}, fmt.Errorf("header field is not lower-case: %s", h.Name)
+		//}
+		h.Name = strings.ToLower(h.Name)
 		if !httpguts.ValidHeaderFieldValue(h.Value) {
 			return header{}, fmt.Errorf("invalid header field value for %s: %q", h.Name, h.Value)
 		}
 		if h.IsPseudo() {
 			if readFirstRegularHeader {
+				// do nothing
 				// all pseudo headers must appear before regular header fields, see section 4.3 of RFC 9114
-				return header{}, fmt.Errorf("received pseudo header %s after a regular header field", h.Name)
 			}
 			var isResponsePseudoHeader bool // pseudo headers are either valid for requests or for responses
 			switch h.Name {
