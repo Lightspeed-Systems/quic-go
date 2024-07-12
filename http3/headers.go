@@ -34,9 +34,9 @@ func parseHeaders(headers []qpack.HeaderField, isRequest bool) (header, error) {
 	var contentLengthStr string
 	for _, h := range headers {
 		// field names need to be lowercase, see section 4.2 of RFC 9114
-		if strings.ToLower(h.Name) != h.Name {
-			return header{}, fmt.Errorf("header field is not lower-case: %s", h.Name)
-		}
+		//if strings.ToLower(h.Name) != h.Name {
+		//	return header{}, fmt.Errorf("header field is not lower-case: %s", h.Name)
+		//}
 		if !httpguts.ValidHeaderFieldValue(h.Value) {
 			return header{}, fmt.Errorf("invalid header field value for %s: %q", h.Name, h.Value)
 		}

@@ -14,10 +14,10 @@ import (
 	reflect "reflect"
 	time "time"
 
-	protocol "github.com/quic-go/quic-go/internal/protocol"
-	utils "github.com/quic-go/quic-go/internal/utils"
-	wire "github.com/quic-go/quic-go/internal/wire"
-	logging "github.com/quic-go/quic-go/logging"
+	protocol "github.com/Lightspeed-Systems/quic-go/internal/protocol"
+	utils "github.com/Lightspeed-Systems/quic-go/internal/utils"
+	wire "github.com/Lightspeed-Systems/quic-go/internal/wire"
+	logging "github.com/Lightspeed-Systems/quic-go/logging"
 	gomock "go.uber.org/mock/gomock"
 )
 

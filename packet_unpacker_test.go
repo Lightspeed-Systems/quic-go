@@ -4,11 +4,11 @@ import (
 	"errors"
 	"time"
 
-	"github.com/quic-go/quic-go/internal/handshake"
-	"github.com/quic-go/quic-go/internal/mocks"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/qerr"
-	"github.com/quic-go/quic-go/internal/wire"
+	"github.com/Lightspeed-Systems/quic-go/internal/handshake"
+	"github.com/Lightspeed-Systems/quic-go/internal/mocks"
+	"github.com/Lightspeed-Systems/quic-go/internal/protocol"
+	"github.com/Lightspeed-Systems/quic-go/internal/qerr"
+	"github.com/Lightspeed-Systems/quic-go/internal/wire"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

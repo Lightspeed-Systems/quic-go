@@ -10,10 +10,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/utils"
-	"github.com/quic-go/quic-go/internal/wire"
-	"github.com/quic-go/quic-go/logging"
+	"github.com/Lightspeed-Systems/quic-go/internal/protocol"
+	"github.com/Lightspeed-Systems/quic-go/internal/utils"
+	"github.com/Lightspeed-Systems/quic-go/internal/wire"
+	"github.com/Lightspeed-Systems/quic-go/logging"
 )
 
 var errListenerAlreadySet = errors.New("listener already set")

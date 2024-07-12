@@ -15,9 +15,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/quic-go/quic-go"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/quicvarint"
+	"github.com/Lightspeed-Systems/quic-go"
+	"github.com/Lightspeed-Systems/quic-go/internal/protocol"
+	"github.com/Lightspeed-Systems/quic-go/quicvarint"
 
 	"github.com/quic-go/qpack"
 )

@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/quicvarint"
+	"github.com/Lightspeed-Systems/quic-go/internal/protocol"
+	"github.com/Lightspeed-Systems/quic-go/quicvarint"
 )
 
 // A ConnectionCloseFrame is a CONNECTION_CLOSE frame

@@ -12,8 +12,8 @@ package mocks
 import (
 	reflect "reflect"
 
-	handshake "github.com/quic-go/quic-go/internal/handshake"
-	protocol "github.com/quic-go/quic-go/internal/protocol"
+	handshake "github.com/Lightspeed-Systems/quic-go/internal/handshake"
+	protocol "github.com/Lightspeed-Systems/quic-go/internal/protocol"
 	gomock "go.uber.org/mock/gomock"
 )
 
